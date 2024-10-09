@@ -5,4 +5,9 @@ To get started, open the Readme.md files in the analysis, back-end and front-end
 
 Change this readme file to describe your project, change the title and fill in your name below.
 
-### \<Student 1 name\> / \<Student 2 name\>
+### \<Student 1 Liano Caekebeke\>
+
+Title: MovieCo
+
+Description: When you have and account on the MovieCo app, you can look at a library of movies and look at all of the information about that movie. You can personalise your account with styling and personal information. You can also add movies to your library and save them.
+
