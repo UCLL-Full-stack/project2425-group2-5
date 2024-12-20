@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '../components/Button';
 import DataComponent from '@components/DataComponent';
 import { Parent } from '@components/Parent';
@@ -10,6 +10,13 @@ import { useRouter } from 'next/router';
 const Home: React.FC = () => {
     const router = useRouter(); 
     const handleClick = () =>  router.push('/movies');
+    useEffect(() => {
+        // Check if the user is logged in (check role in sessionStorage)
+        const role = sessionStorage.getItem('role');
+        if (!role) {
+          router.push('/login'); // Redirect to login page if no role
+        }
+      }, [router]);
 
     return (
         <div className={styles.background}>

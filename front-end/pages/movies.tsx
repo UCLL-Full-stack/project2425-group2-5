@@ -45,6 +45,23 @@ const Movies: React.FC = () => {
                         ))}
                     </div>
                 </section>
+                <section className={styles.featureSection}>
+                    <div className={styles.movieList}>
+                        {/* You can map over a list of movies here */}
+                        <div className={styles.movieCard}>
+                            <img src="/images/Beetlejuice_Beetlejuice.jpg" alt="Beetlejuice Beetlejuice" className={styles.moviePoster} />
+                            <h3>Beetlejuice Beetlejuice</h3>
+                        </div>
+                        <div className={styles.movieCard}>
+                            <img src="/images/scream6.jpg" alt="Scream 6 " className={styles.moviePoster} />
+                            <h3>Scream 6</h3>
+                        </div>
+                        <div className={styles.movieCard}>
+                            <img src="/images/babysitterKillerQueen.jpg" alt="The Babysitter: Killer Queen" className={styles.moviePoster} />
+                            <h3>The Babysitter: Killer Queen</h3>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer className={styles.footer}>
                 <p>&copy; 2024 FilmScope. All Rights Reserved.</p>
